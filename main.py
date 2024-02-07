@@ -23,7 +23,7 @@ from methods.NTD import NTD
 from utils.augment import Cutout, select_autoaugment
 from utils.data_loader import get_train_datalist, get_test_datalist, get_statistics
 
-from SCELoss.loss import SCELoss
+#from SCELoss.loss import SCELoss
 
 writer = SummaryWriter("tensorboard")
 
