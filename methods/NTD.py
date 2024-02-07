@@ -26,7 +26,7 @@ from utils.data_loader import cutmix_data, ImageDataset
 from utils.loss import coteaching_loss, dividemix_loss, neg_entropy_loss
 from utils.train_utils import select_model, soft_cross_entropy_loss
 
-from SCELoss.loss import SCELoss
+#from SCELoss.loss import SCELoss
 
 import ttach as tta
 
