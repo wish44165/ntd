@@ -1,0 +1,13 @@
+pandas~=1.1.3
+numpy
+pymongo~=3.9.0
+fire~=0.2.1
+pillow
+torchvision
+torch_optimizer
+randaugment
+easydict
+tensorboard
+packaging
+scikit-learn
+ttach
