@@ -48,6 +48,8 @@ args.dataset = "cifar10" # cifar10, cifar100, WebVision-V1-2, Food-101N
 args.exp_name = "blurry10" # WebVision-V1-2, Food-101N: blurry10, others: blurry10_symN20, blurry10_symN40, blurry10_symN60, blurry10_asymN20, blurry10_asymN40
 args.dataset_path = f"dataset/{args.dataset}"
 
+args.dataset = opt.dataset
+
 if args.dataset == "cifar10":
     args.n_cls_a_task = 2
     args.n_init_cls = 10
