@@ -1,4 +1,5 @@
 # NTD
+
 5th CLVISION CVPR Workshop
 
 <details><summary>Conda Setup</summary>
@@ -20,10 +21,30 @@ $ pip install -r requirements.txt
 
 </details>
 
-```
-$ python run_experiment.py --dataset_path ../../../../datasets/cifar10_png --mem_manage PuriDivER --robust_type PuriDivER --rnd_seed 1 --exp_name blurry10_asymN40
-```
 
-```
+<details><summary>Trial (rnd_seed 1)</summary>
+
+```bash
+# PuriDivER
+$ python run_experiment.py --dataset_path ../../../../datasets/cifar10_png --mem_manage PuriDivER --robust_type PuriDivER --rnd_seed 1 --exp_name blurry10_asymN40
+
+# NTD
 $ python run_experiment.py --dataset_path ../../../../datasets/cifar10_png --mem_manage NTD --robust_type none --rnd_seed 1 --exp_name blurry10_asymN40
 ```
+
+</details>
+
+
+<details><summary>Execute Command</summary>
+
+```bash
+$ python run_experiment.py --dataset_path <dataset path> \
+                           --mem_manage <memory construction type> \
+                           --robust_type <memory usage type> \
+                           --exp_name <noisy level and type>
+
+# example
+$ python run_experiment.py --dataset_path ../../../../datasets/cifar10_png --mem_manage NTD --robust_type none --exp_name blurry10_symN20
+```
+
+</details>
