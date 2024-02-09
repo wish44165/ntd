@@ -107,12 +107,9 @@ args.debug = False
 args.coeff = 0.5
 
 # custom
-args.memory_size = opt.memory_size
-args.model_name = opt.model_name
 args.exp_name = opt.exp_name
 args.dataset_path = opt.dataset_path
 args.debug = opt.debug
-args.n_epoch = opt.n_epoch
 
 args.mem_manage = opt.mem_manage
 args.robust_type = opt.robust_type
