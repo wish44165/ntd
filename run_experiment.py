@@ -31,7 +31,7 @@ def parse_opt(known=False):
     parser.add_argument('--init_opt', nargs='?', const=True, default=True, help='Initialize optimizer states for every iterations')
     parser.add_argument('--topk', type=int, default=1, help='Set k when we want to set topk accuracy')
     #parser.add_argument('--transforms', type=str, default=List[Literal["cutmix", "cutout", "randaug", "autoaug"]], help='Additional train transforms')
-    parser.add_argument('--exp_name', type=str, choices=["blurry10_symN20", "blurry10_symN40", "blurry10_symN60", "blurry10_asymN20", "blurry10_asymN40"], default='blurry10_symN20', help='Experiment name')
+    parser.add_argument('--exp_name', type=str, choices=["blurry10", "blurry10_symN20", "blurry10_symN40", "blurry10_symN60", "blurry10_asymN20", "blurry10_asymN40"], default='blurry10_symN20', help='Experiment name')
     parser.add_argument('--debug', nargs='?', const=True, default=False, help='Turn on Debug mode')
     parser.add_argument('--coeff', type=float, default=1.0, help='Coefficiency')
     parser.add_argument('--noise_rate', type=float, default=0.0, help='only for CoTeaching.')
