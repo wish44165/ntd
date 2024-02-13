@@ -27,7 +27,7 @@ $ pip install -r requirements.txt
 
 - [CIFAR10](https://github.com/hwany-j/cifar10_png)
 - [CIFAR100](https://github.com/hwany-j/cifar100_png)
-- [WebVision](https://data.vision.ee.ethz.ch/cvl/webvision/download.html)
+- [WebVision](https://data.vision.ee.ethz.ch/cvl/webvision/download.html) ([Google Images Resized (16 GB)](https://data.vision.ee.ethz.ch/cvl/webvision/google_resized_256.tar) / [Validation Images Resized (834 MB)](https://data.vision.ee.ethz.ch/cvl/webvision/test_images_256.tar))
 - [Food-101N](https://kuanghuei.github.io/Food-101N/)
 
 </details>
@@ -81,7 +81,7 @@ $ python run_experiment.py --dataset cifar100 --dataset_path ../../../../dataset
 $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datasets/Food-101N/images --mem_manage NTD --robust_type none --exp_name blurry10
 $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datasets/Food-101N/images --mem_manage PuriDivER --robust_type PuriDivER --exp_name blurry10
 
-# Food-101N
+# WebVision
 $ python run_experiment.py --dataset WebVision-V1-2 --dataset_path ../../../../datasets/WebVision-V1-2 --mem_manage NTD --robust_type none --exp_name blurry10
 ```
 
