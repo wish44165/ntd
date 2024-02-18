@@ -2,6 +2,8 @@
 
 5th CLVISION CVPR Workshop
 
+The repository has been tested on Ubuntu 22.04 with CUDA 12.3, the latest version of cuDNN, Python 3.10, and PyTorch 2.2.0+cu121.
+
 <details><summary>Create Conda Environment</summary>
 
 ```bash
