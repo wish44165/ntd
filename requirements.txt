@@ -11,3 +11,4 @@ tensorboard
 packaging
 scikit-learn
 ttach
+matplotlib
