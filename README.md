@@ -1,29 +1,31 @@
 # Fair and Robust Continual Learning: Mitigating Noisy Labels in Data Streams
 
+
 5th CLVISION CVPR Workshop
 
-The repository has been tested on Ubuntu 22.04 with CUDA 12.3, the latest version of cuDNN, Python 3.10, and PyTorch 2.2.0+cu121.
+
+## 1. Environmental Setup
+
+<details>
+
+<summary>Hardware Information</summary>
+
+- CPU: Intel® Core™ i7-12650H
+- GPU: NVIDIA GeForce RTX 4050 Laptop GPU (6G)
+  
+</details>
 
 <details><summary>Create Conda Environment</summary>
 
 ```bash
 $ conda create -n ntd python=3.10 -y
 $ conda activate ntd
-```
-
-</details>
-
-
-<details><summary>Install Required Packages</summary>
-
-```bash
 $ git clone https://github.com/wish44165/ntd.git
 $ cd ntd/
 $ pip install -r requirements.txt
 ```
 
 </details>
-
 
 <details><summary>Datasets Preparation</summary>
 
@@ -35,6 +37,8 @@ $ pip install -r requirements.txt
 </details>
 
 
+## 2. Reproducing Details
+
 <details><summary>Execute Commands</summary>
 
 ```bash
@@ -45,7 +49,6 @@ $ python run_experiment.py --dataset_path <dataset path> \
 ```
 
 </details>
-
 
 <details><summary>Reproduce Commands</summary>
 
@@ -92,3 +95,48 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 ```
 
 </details>
+
+
+## 3. Experimental Results
+
+### 3.1. Last test accuracy
+
+- [epoch_000.pt](https://drive.google.com/file/d/1_8tjqhdgy8UVrWlXnJcFTR4i7erNk0ym/view?usp=sharing)
+
+| Leaderboards     | Filename               | Upload time         | Evaluation result | Ranking |
+| ---------------- | ---------------------- | ------------------- | ----------------- | ------- |
+| Public & Private | fp-1-0.01-0.5-2172.csv | 2023-08-04 00:51:42 | 0.5700583         | 1/24    |
+
+### 3.2. Last clean ratio
+
+### 3.3. Training time spent
+
+### 3.4. GPU resource requirement
+
+
+## 4. GitHub Acknowledgement
+
+- [Conversion Tool for FishEye Dataset](https://github.com/leofansq/Tools_KITTI2FishEye)
+- [FishEye8K: A Benchmark and Dataset for Fisheye Camera Object Detection](https://github.com/MoyoG/FishEye8K)
+- [WoodScape: A multi-task, multi-camera fisheye dataset for autonomous driving](https://github.com/valeoai/WoodScape)
+- [Data Augmentation For Object Detection](https://github.com/Paperspace/DataAugmentationForObjectDetection)
+- [Official YOLOv7](https://github.com/WongKinYiu/yolov7)
+
+
+## 5. References
+
+- [Correcting Fisheye Images](https://www.baeldung.com/cs/correcting-fisheye-images)
+- [WoodScape: A Multi-Task, Multi-Camera Fisheye Dataset for Autonomous Driving](https://ieeexplore.ieee.org/document/9008254)
+- [Visual Chirality](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Visual_Chirality_CVPR_2020_paper.pdf)
+
+
+## Citation
+```
+@inproceedings{chen2023one,
+  title={One-Epoch Training for Object Detection in Fisheye Images},
+  author={Chen, Yu-Hsi},
+  booktitle={Proceedings of the 5th ACM International Conference on Multimedia in Asia},
+  pages={1--5},
+  year={2023}
+}
+```
