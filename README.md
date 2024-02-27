@@ -1,10 +1,10 @@
-# Fair and Robust Continual Learning: Mitigating Noisy Labels in Data Streams
+## Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels
 
 
 5th CLVISION CVPR Workshop
 
 
-## 1. Environmental Setup
+### 1. Environmental Setup
 
 <details>
 
@@ -37,7 +37,7 @@ $ pip install -r requirements.txt
 </details>
 
 
-## 2. Reproducing Details
+### 2. Reproducing Details
 
 <details><summary>Execute Commands</summary>
 
@@ -97,9 +97,9 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 </details>
 
 
-## 3. Experimental Results
+### 3. Experimental Results
 
-### 3.1. Last test accuracy
+#### 3.1. Last test accuracy
 
 - [epoch_000.pt](https://drive.google.com/file/d/1_8tjqhdgy8UVrWlXnJcFTR4i7erNk0ym/view?usp=sharing)
 
@@ -107,30 +107,19 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 | ---------------- | ---------------------- | ------------------- | ----------------- | ------- |
 | Public & Private | fp-1-0.01-0.5-2172.csv | 2023-08-04 00:51:42 | 0.5700583         | 1/24    |
 
-### 3.2. Last clean ratio
+#### 3.2. Last clean ratio
 
-### 3.3. Training time spent
+#### 3.3. Training time spent
 
-### 3.4. GPU resource requirement
-
-
-## 4. GitHub Acknowledgement
-
-- [Conversion Tool for FishEye Dataset](https://github.com/leofansq/Tools_KITTI2FishEye)
-- [FishEye8K: A Benchmark and Dataset for Fisheye Camera Object Detection](https://github.com/MoyoG/FishEye8K)
-- [WoodScape: A multi-task, multi-camera fisheye dataset for autonomous driving](https://github.com/valeoai/WoodScape)
-- [Data Augmentation For Object Detection](https://github.com/Paperspace/DataAugmentationForObjectDetection)
-- [Official YOLOv7](https://github.com/WongKinYiu/yolov7)
+#### 3.4. GPU resource requirement
 
 
-## 5. References
+### 4. Acknowledgments and References
 
-- [Correcting Fisheye Images](https://www.baeldung.com/cs/correcting-fisheye-images)
-- [WoodScape: A Multi-Task, Multi-Camera Fisheye Dataset for Autonomous Driving](https://ieeexplore.ieee.org/document/9008254)
-- [Visual Chirality](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Visual_Chirality_CVPR_2020_paper.pdf)
+- [Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries](https://arxiv.org/abs/2203.15355) ([GitHub](https://github.com/clovaai/puridiver))
 
 
-## Citation
+### Citation
 ```
 @inproceedings{chen2023one,
   title={One-Epoch Training for Object Detection in Fisheye Images},
