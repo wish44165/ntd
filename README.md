@@ -1,7 +1,8 @@
 ## Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels
 
-
 5th CLVISION CVPR Workshop
+
+
 
 
 ### 1. Environmental Setup
@@ -46,6 +47,8 @@ $ pip install -r requirements.txt
 | Epochs      | 256      | 256      | 128       | 128       |
 
 </details>
+
+
 
 
 ### 2. Reproducing Details
@@ -108,6 +111,8 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 </details>
 
 
+
+
 ### 3. Experimental Results
 
 <details><summary>Comparison Tables</summary>
@@ -120,7 +125,7 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 |--------------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
 |                          | Sym.              |                   |                   | Sym.              |                   |                   |
 |                          | 20                | 40                | 60                | 20                | 40                |                   |
-| PuriDivER~[1]            | **60.6** ± 1.8    | 57.8 ± 2.2        | **52.0** ± 2.8    | **61.2** ± 2.9    | 49.4 ± 5.7        | 36.3 ± 0.3        |
+| PuriDivER [1]            | **60.6** ± 1.8    | 57.8 ± 2.2        | **52.0** ± 2.8    | **61.2** ± 2.9    | 49.4 ± 5.7        | 36.3 ± 0.3        |
 | NTD (ours)               | 59.8 ± 0.6        | **59.7** ± 1.5    | 50.9 ± 0.3        | 60.1 ± 0.3        | **53.7** ± 3.9    | **38.3** ± 1.0    |
 
 
@@ -130,7 +135,7 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 |--------------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
 |                          | Sym.              |                   |                   | Sym.              |                   |                   |
 |                          | 20                | 40                | 60                | 20                | 40                |                   |
-| PuriDivER~[1]            | 98.6 ± 0.7        | 96.1 ± 0.6        | 86.6 ± 4.0        | 98.7 ± 0.4        | 79.7 ± 7.7        | **99.2** ± 0.1    |
+| PuriDivER [1]            | 98.6 ± 0.7        | 96.1 ± 0.6        | 86.6 ± 4.0        | 98.7 ± 0.4        | 79.7 ± 7.7        | **99.2** ± 0.1    |
 | NTD (ours)               | **99.2** ± 0.5    | **97.1** ± 0.9    | **86.8** ± 0.7    | **98.7** ± 1.0    | **87.9** ± 4.6    | 99.0 ± 0.3        |
 
 
@@ -138,15 +143,35 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 | Methods                  | WebVision          | Food-101N          |
 |--------------------------|--------------------|--------------------|
-| PuriDivER~[1]            | $25.1$ ± $0.8$     | $13.8$ ± $0.6$     |
+| PuriDivER [1]            | $25.1$ ± $0.8$     | $13.8$ ± $0.6$     |
 | NTD (ours)               | **26.1** ± $1.6$   | **17.0** ± $0.9$   |
 
-**Table: Last memory clean ratio on WebVision and Food-101N.**
+**Last memory clean ratio on WebVision and Food-101N.**
 
 | Methods                  | WebVision          | Food-101N          |
 |--------------------------|--------------------|--------------------|
-| PuriDivER~[1]            | $100$ ± $0$        | $100$ ± $0$        |
+| PuriDivER [1]            | $100$ ± $0$        | $100$ ± $0$        |
 | NTD (ours)               | **100** ± $0$      | **100** ± $0$      |
+
+
+**The average training time on the CIFAR10 dataset with noisy type Sym.-40\% across three distinct random seeds for the online learning stage, the episodic memory usage stage, and the overall process (measured in hours).**
+
+| Methods                  | Online learning   | Episodic memory usage | Overall  |
+|--------------------------|-------------------|-----------------------|----------|
+| PuriDivER [1]            | 0.28              | 3.09                  | 3.37     |
+| NTD (ours)               | **0.19**          | **1.25**              | **1.44** |
+
+
+**GPU memory usage for the CIFAR10 dataset with noisy type Sym.-40\% during the online learning and episodic memory usage stages (measured in MiB).**
+
+| Methods                  | Online learning   | Episodic memory usage |
+|--------------------------|-------------------|-----------------------|
+| PuriDivER [1]            | 828               | 4528                  |
+| NTD (ours)               | **828**           | **834**               |
+
+**References:**
+
+[1] bang2022online
 
 </details>
 
@@ -155,7 +180,9 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 ### 4. Acknowledgments and References
 
-[1] [Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries](https://arxiv.org/abs/2203.15355) ([GitHub](https://github.com/clovaai/puridiver))
+- [Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries](https://arxiv.org/abs/2203.15355) ([GitHub](https://github.com/clovaai/puridiver))
+
+
 
 
 ### Citation
