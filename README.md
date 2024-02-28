@@ -114,8 +114,8 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 #### 3.1. Last test accuracy
 
-|  | <td colspan=6> CIFAR10 | <td colspan=6> CIFAR100 | 
-| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | Methods | 20 | 40 | 60 | 20 | 40 | 20 | 40 | 60 | 20 | 40 |
 |  |  <td colspan=3> Sym. | <td colspan=2> Asym. | <td colspan=3> Sym. | <td colspan=2> Asym. |
 | PuriDivER    | 60.6 | 57.8 | 52.0 | 61.2 | 49.4 | 36.3 | 33.6 | 28.6 | 34.3 | 24.9 |
