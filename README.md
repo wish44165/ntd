@@ -110,11 +110,11 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 ### 3. Experimental Results
 
+<details><summary>Comparison Tables</summary>
+
 - [logs](https://github.com/wish44165/ntd/tree/main/logs)
 
-<details><summary>Tables</summary>
-
-**Table: Last test accuracy evaluated on CIFAR10 and CIFAR100 datasets with noisy types Sym.-{20%, 40%, 60%} and Asym.-{20%, 40%}.**
+**Last test accuracy evaluated on CIFAR10 and CIFAR100 datasets with noisy types Sym.-{20%, 40%, 60%} and Asym.-{20%, 40%}.**
 
 | Methods                  | CIFAR10           |                   |                   | CIFAR100          |                   |                   |
 |--------------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
@@ -124,7 +124,7 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 | NTD (ours)               | 59.8 ± 0.6        | **59.7** ± 1.5    | 50.9 ± 0.3        | 60.1 ± 0.3        | **53.7** ± 3.9    | **38.3** ± 1.0    |
 
 
-**Table: Last memory clean ratio on CIFAR10 and CIFAR100 datasets with noisy types Sym.-{20%, 40%, 60%} and Asym.-{20%, 40%}.**
+**Last memory clean ratio on CIFAR10 and CIFAR100 datasets with noisy types Sym.-{20%, 40%, 60%} and Asym.-{20%, 40%}.**
 
 | Methods                  | CIFAR10           |                   |                   | CIFAR100          |                   |                   |
 |--------------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
@@ -133,7 +133,8 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 | PuriDivER~[1]            | 98.6 ± 0.7        | 96.1 ± 0.6        | 86.6 ± 4.0        | 98.7 ± 0.4        | 79.7 ± 7.7        | **99.2** ± 0.1    |
 | NTD (ours)               | **99.2** ± 0.5    | **97.1** ± 0.9    | **86.8** ± 0.7    | **98.7** ± 1.0    | **87.9** ± 4.6    | 99.0 ± 0.3        |
 
-**Table: Last test accuracy evaluated on WebVision and Food-101N.**
+
+**Last test accuracy evaluated on WebVision and Food-101N.**
 
 | Methods                  | WebVision          | Food-101N          |
 |--------------------------|--------------------|--------------------|
@@ -147,11 +148,6 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 | PuriDivER~[1]            | $100$ ± $0$        | $100$ ± $0$        |
 | NTD (ours)               | **100** ± $0$      | **100** ± $0$      |
 
-**References:**
-
-[1] bang2022online
-
-
 </details>
 
 
@@ -159,7 +155,7 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 ### 4. Acknowledgments and References
 
-- [Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries](https://arxiv.org/abs/2203.15355) ([GitHub](https://github.com/clovaai/puridiver))
+[1] [Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries](https://arxiv.org/abs/2203.15355) ([GitHub](https://github.com/clovaai/puridiver))
 
 
 ### Citation
