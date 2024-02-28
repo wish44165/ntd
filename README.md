@@ -114,38 +114,12 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 #### 3.1. Last test accuracy
 
-\begin{table*}
-\centering
-\footnotesize
-  \caption{Last test accuracy evaluated on CIFAR10 and CIFAR100 datasets with noisy types Sym.-{20\%, 40\%, 60\%} and Asym.-{20\%, 40\%}.}
-  \label{tab:last_test_accuracy_cifar}
-  \begin{tabular}{@{}lcccccccccc@{}}
-    \toprule
-    \multirow{4}{*}{Methods} & \multicolumn{5}{c}{CIFAR10} & \multicolumn{5}{c}{CIFAR100}\\
-    \cmidrule(lr){2-6} \cmidrule(lr){7-11}
-    %\midrule
-    & \multicolumn{3}{c}{Sym.} & \multicolumn{2}{c}{Asym.} & \multicolumn{3}{c}{Sym.} & \multicolumn{2}{c}{Asym.}\\
-    & 20 & 40 & 60 & 20 & 40 & 20 & 40 & 60 & 20 & 40\\ 
-    %\cline{2-3} \cline{5-6}
-    \cmidrule(r){1-1} \cmidrule(lr){2-4} \cmidrule(lr){5-6} \cmidrule(lr){7-9} \cmidrule(lr){10-11}
-    PuriDivER~\cite{bang2022online} & $\boldsymbol{60.6}_{\pm 1.8}$ & $57.8_{\pm 2.2}$ & $\boldsymbol{52.0}_{\pm 2.8}$ & $\boldsymbol{61.2}_{\pm 2.9}$ & $49.4_{\pm 5.7}$ & $36.3_{\pm 0.3}$ & $33.6_{\pm 0.7}$ & $\boldsymbol{28.6}_{\pm 1.7}$ & $34.3_{\pm 1.0}$ & $24.9_{\pm 1.4}$ \\
-    \textbf{NTD} (ours) & $59.8_{\pm 0.6}$ & $\boldsymbol{59.7}_{\pm 1.5}$ & $50.9_{\pm 0.3}$ & $60.1_{\pm 0.3}$ & $\boldsymbol{53.7}_{\pm 3.9}$ & $\boldsymbol{38.3}_{\pm 1.0}$ & $\boldsymbol{35.2}_{\pm 1.5}$ & $28.0_{\pm 1.1}$ & $\boldsymbol{37.6}_{\pm 0.3}$ & $\boldsymbol{25.8}_{\pm 1.0}$ \\
-    \bottomrule
-  \end{tabular}
-\end{table*}
-
-|     | CIFAR10  | CIFAR100 | WebVision | Food-101N |
-| ----------- | -------- | -------- | --------- | --------- |
+|  | <td colspan=6> CIFAR10 | <td colspan=6> CIFAR100 | 
+| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | Methods | 20 | 40 | 60 | 20 | 40 | 20 | 40 | 60 | 20 | 40 |
 |  |  <td colspan=3> Sym. | <td colspan=2> Asym. | <td colspan=3> Sym. | <td colspan=2> Asym. |
 | PuriDivER    | 60.6 | 57.8 | 52.0 | 61.2 | 49.4 | 36.3 | 33.6 | 28.6 | 34.3 | 24.9 |
 | **NTD**      | 59.8 | 59.7 | 50.9 | 60.1 | 53.7 | 38.3 | 35.2 | 28.0 | 37.6 | 25.8 |
-| # class     | 10       | 100      | 50        | 101       |
-| # tasks     | 5        | 5        | 10        | 5         |
-| Memory size | 500      | 2000     | 1000      | 2000      |
-| Models      | ResNet18 | ResNet32 | ResNet34  | ResNet34  |
-| Batch size  | 16       | 16       | 16        | 16        |
-| Epochs      | 256      | 256      | 128       | 128       |
 
 #### 3.2. Last memory clean ratio
 
