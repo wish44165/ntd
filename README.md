@@ -114,10 +114,10 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 #### 3.1. Last test accuracy
 
-| --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| <td colspan=3> Sym.  <td colspan=2> Asym.  <td colspan=3> Sym.  <td colspan=2> Asym. |
 | --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | Methods | 20 | 40 | 60 | 20 | 40 | 20 | 40 | 60 | 20 | 40 |
-|  |  <td colspan=3> Sym. | <td colspan=2> Asym. | <td colspan=3> Sym. | <td colspan=2> Asym. |
+|    <td colspan=3> Sym.  <td colspan=2> Asym.  <td colspan=3> Sym.  <td colspan=2> Asym. |
 | PuriDivER    | 60.6 | 57.8 | 52.0 | 61.2 | 49.4 | 36.3 | 33.6 | 28.6 | 34.3 | 24.9 |
 | **NTD**      | 59.8 | 59.7 | 50.9 | 60.1 | 53.7 | 38.3 | 35.2 | 28.0 | 37.6 | 25.8 |
 
