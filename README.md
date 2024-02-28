@@ -114,7 +114,7 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 #### 3.1. Last test accuracy
 
-| <td colspan=3> Sym.  <td colspan=2> Asym.  <td colspan=3> Sym.  <td colspan=2> Asym. |
+| --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | Methods | 20 | 40 | 60 | 20 | 40 | 20 | 40 | 60 | 20 | 40 |
 |    <td colspan=3> Sym.  <td colspan=2> Asym.  <td colspan=3> Sym.  <td colspan=2> Asym. |
