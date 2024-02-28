@@ -34,6 +34,27 @@ $ pip install -r requirements.txt
 - [WebVision](https://data.vision.ee.ethz.ch/cvl/webvision/download.html) ([Google Images Resized (16 GB)](https://data.vision.ee.ethz.ch/cvl/webvision/google_resized_256.tar) / [Validation Images Resized (834 MB)](https://data.vision.ee.ethz.ch/cvl/webvision/test_images_256.tar))
 - [Food-101N](https://kuanghuei.github.io/Food-101N/)
 
+\begin{table}
+\centering
+\footnotesize
+  \caption{Descriptions for datasets and hyperparameters.}
+  \label{tab:dataset_hyperparameter}
+  \begin{tabular}{lcccc}
+    \toprule
+    Datasets & CIFAR10 & CIFAR100 & WebVision & Food-101N \\
+    \midrule
+    \# train & $50000$ & $50000$ & $65944$ & $52867$ \\
+    \# test & $10000$ & $10000$ & $2500$ & $4741$ \\
+    \# class & $10$ & $100$ & $50$ & $101$ \\
+    \# tasks & $5$ & $5$ & $10$ & $5$ \\
+    Memory size & $500$ & $2000$ & $1000$ & $2000$ \\
+    Models & ResNet18 & ResNet32 & ResNet34 & ResNet34 \\
+    Batch size & $16$ & $16$ & $16$ & $16$ \\
+    Epochs & $256$ & $256$ & $128$ & $128$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
 </details>
 
 
