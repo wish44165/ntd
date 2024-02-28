@@ -112,7 +112,7 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 - [logs](https://github.com/wish44165/ntd/tree/main/logs)
 
-#### 3.1. Last test accuracy
+<details><summary>Tables</summary>
 
 **Table: Last test accuracy evaluated on CIFAR10 and CIFAR100 datasets with noisy types Sym.-{20%, 40%, 60%} and Asym.-{20%, 40%}.**
 
@@ -120,16 +120,9 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 |--------------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
 |                          | Sym.              |                   |                   | Sym.              |                   |                   |
 |                          | 20                | 40                | 60                | 20                | 40                |                   |
-|--------------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
 | PuriDivER~[1]            | **60.6** ± 1.8    | 57.8 ± 2.2        | **52.0** ± 2.8    | **61.2** ± 2.9    | 49.4 ± 5.7        | 36.3 ± 0.3        |
 | NTD (ours)               | 59.8 ± 0.6        | **59.7** ± 1.5    | 50.9 ± 0.3        | 60.1 ± 0.3        | **53.7** ± 3.9    | **38.3** ± 1.0    |
 
-**References:**
-
-[1] bang2022online
-
-
-#### 3.2. Last memory clean ratio
 
 **Table: Last memory clean ratio on CIFAR10 and CIFAR100 datasets with noisy types Sym.-{20%, 40%, 60%} and Asym.-{20%, 40%}.**
 
@@ -137,18 +130,31 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 |--------------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
 |                          | Sym.              |                   |                   | Sym.              |                   |                   |
 |                          | 20                | 40                | 60                | 20                | 40                |                   |
-|--------------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
 | PuriDivER~[1]            | 98.6 ± 0.7        | 96.1 ± 0.6        | 86.6 ± 4.0        | 98.7 ± 0.4        | 79.7 ± 7.7        | **99.2** ± 0.1    |
 | NTD (ours)               | **99.2** ± 0.5    | **97.1** ± 0.9    | **86.8** ± 0.7    | **98.7** ± 1.0    | **87.9** ± 4.6    | 99.0 ± 0.3        |
+
+**Table: Last test accuracy evaluated on WebVision and Food-101N.**
+
+| Methods                  | WebVision          | Food-101N          |
+|--------------------------|--------------------|--------------------|
+| PuriDivER~[1]            | $25.1$ ± $0.8$     | $13.8$ ± $0.6$     |
+| NTD (ours)               | **26.1** ± $1.6$   | **17.0** ± $0.9$   |
+
+**Table: Last memory clean ratio on WebVision and Food-101N.**
+
+| Methods                  | WebVision          | Food-101N          |
+|--------------------------|--------------------|--------------------|
+| PuriDivER~[1]            | $100$ ± $0$        | $100$ ± $0$        |
+| NTD (ours)               | **100** ± $0$      | **100** ± $0$      |
 
 **References:**
 
 [1] bang2022online
 
 
-#### 3.3. Training time spent
+</details>
 
-#### 3.4. GPU resource requirement
+
 
 
 ### 4. Acknowledgments and References
