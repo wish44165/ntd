@@ -1,0 +1,56 @@
+[INFO] main.py:50 > ###############################
+[INFO] main.py:51 > ##### Random Seed 1 Start #####
+[INFO] main.py:52 > ###############################
+[INFO] main.py:58 > _get_args: <bound method _AttributeHolder._get_args of Namespace(batchsize=16, coeff=0.5, dataset='cifar10', dataset_path='../../../../datasets/cifar100_png', debug=False, exp_name='blurry10_symN60', init_model=False, init_opt=True, log_path='results', lr=0.05, mem_manage='PuriDivER', memory_size=500, model_name='resnet18', n_cls_a_task=2, n_epoch=255, n_init_cls=10, n_tasks=5, n_worker=2, noise_rate=0.0, rnd_seed=['1', '2', '3'], robust_type='PuriDivER', topk=1, transforms=['autoaug', 'cutmix'], warmup=10)>
+_get_kwargs: <bound method _AttributeHolder._get_kwargs of Namespace(batchsize=16, coeff=0.5, dataset='cifar10', dataset_path='../../../../datasets/cifar100_png', debug=False, exp_name='blurry10_symN60', init_model=False, init_opt=True, log_path='results', lr=0.05, mem_manage='PuriDivER', memory_size=500, model_name='resnet18', n_cls_a_task=2, n_epoch=255, n_init_cls=10, n_tasks=5, n_worker=2, noise_rate=0.0, rnd_seed=['1', '2', '3'], robust_type='PuriDivER', topk=1, transforms=['autoaug', 'cutmix'], warmup=10)>
+batchsize: 16
+coeff: 0.5
+dataset: cifar10
+dataset_path: ../../../../datasets/cifar100_png
+debug: False
+exp_name: blurry10_symN60
+init_model: False
+init_opt: True
+log_path: results
+lr: 0.05
+mem_manage: PuriDivER
+memory_size: 500
+model_name: resnet18
+n_cls_a_task: 2
+n_epoch: 255
+n_init_cls: 10
+n_tasks: 5
+n_worker: 2
+noise_rate: 0.0
+rnd_seed: ['1', '2', '3']
+robust_type: PuriDivER
+topk: 1
+transforms: ['autoaug', 'cutmix']
+warmup: 10
+[INFO] main.py:64 > Set the device (cuda)
+[INFO] main.py:93 > Using train-transforms Compose(
+    Resize(size=(32, 32), interpolation=bilinear, max_size=None, antialias=True)
+    RandomCrop(size=(32, 32), padding=4)
+    RandomHorizontalFlip(p=0.5)
+    AutoAugment CIFAR10 Policy
+    ToTensor()
+    Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.2023, 0.1994, 0.201))
+)
+[INFO] main.py:123 > [1] Select a CIL method (PuriDivER/PuriDivER)
+[INFO] main.py:139 > [2] Incrementally training 5 tasks
+[INFO] main.py:144 > ##################################################
+[INFO] main.py:145 > # Task 0 iteration
+[INFO] main.py:146 > ##################################################
+[INFO] main.py:147 > [2-1] Prepare a datalist for the current task
+[INFO] data_loader.py:77 > [Train] Get datalist from cifar10_train_blurry10_symN60_rand1_cls2_task0.json
+[INFO] data_loader.py:110 > [Test ] Get datalist from cifar10_test_rand1_cls2_task0.json
+[INFO] data_loader.py:110 > [Test ] Get datalist from cifar10_test_rand1_cls2_task1.json
+[INFO] data_loader.py:110 > [Test ] Get datalist from cifar10_test_rand1_cls2_task2.json
+[INFO] data_loader.py:110 > [Test ] Get datalist from cifar10_test_rand1_cls2_task3.json
+[INFO] data_loader.py:110 > [Test ] Get datalist from cifar10_test_rand1_cls2_task4.json
+[INFO] main.py:173 > [2-2] Set environment for the current task
+[INFO] NTD.py:794 > Apply before_task
+[INFO] NTD.py:821 > Blurry! There is no modification on model fc layer!
+[INFO] NTD.py:830 > Reset the optimizer and scheduler states
+[INFO] NTD.py:838 > Increasing the head of fc 10 -> 10
+[INFO] main.py:183 > [2-3] Start to online train
