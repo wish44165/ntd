@@ -34,26 +34,16 @@ $ pip install -r requirements.txt
 - [WebVision](https://data.vision.ee.ethz.ch/cvl/webvision/download.html) ([Google Images Resized (16 GB)](https://data.vision.ee.ethz.ch/cvl/webvision/google_resized_256.tar) / [Validation Images Resized (834 MB)](https://data.vision.ee.ethz.ch/cvl/webvision/test_images_256.tar))
 - [Food-101N](https://kuanghuei.github.io/Food-101N/)
 
-\begin{table}
-\centering
-\footnotesize
-  \caption{Descriptions for datasets and hyperparameters.}
-  \label{tab:dataset_hyperparameter}
-  \begin{tabular}{lcccc}
-    \toprule
-    Datasets & CIFAR10 & CIFAR100 & WebVision & Food-101N \\
-    \midrule
-    \# train & $50000$ & $50000$ & $65944$ & $52867$ \\
-    \# test & $10000$ & $10000$ & $2500$ & $4741$ \\
-    \# class & $10$ & $100$ & $50$ & $101$ \\
-    \# tasks & $5$ & $5$ & $10$ & $5$ \\
-    Memory size & $500$ & $2000$ & $1000$ & $2000$ \\
-    Models & ResNet18 & ResNet32 & ResNet34 & ResNet34 \\
-    Batch size & $16$ & $16$ & $16$ & $16$ \\
-    Epochs & $256$ & $256$ & $128$ & $128$ \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+| Datasets    | CIFAR10  | CIFAR100 | WebVision | Food-101N |
+| ----------- | -------- | -------- | --------- | --------- |
+| # train     | 50000    | 50000    | 65944     | 52867     |
+| # test      | 10000    | 10000    | 2500      | 4741      |
+| # class     | 10       | 100      | 50        | 101       |
+| # tasks     | 5        | 5        | 10        | 5         |
+| Memory size | 500      | 2000     | 1000      | 2000      |
+| Models      | ResNet18 | ResNet32 | ResNet34  | ResNet34  |
+| Batch size  | 16       | 16       | 16        | 16        |
+| Epochs      | 256      | 256      | 128       | 128       |
 
 </details>
 
@@ -120,15 +110,44 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 ### 3. Experimental Results
 
+- [logs](https://github.com/wish44165/ntd/tree/main/logs)
+
 #### 3.1. Last test accuracy
 
-- [epoch_000.pt](https://drive.google.com/file/d/1_8tjqhdgy8UVrWlXnJcFTR4i7erNk0ym/view?usp=sharing)
+\begin{table*}
+\centering
+\footnotesize
+  \caption{Last test accuracy evaluated on CIFAR10 and CIFAR100 datasets with noisy types Sym.-{20\%, 40\%, 60\%} and Asym.-{20\%, 40\%}.}
+  \label{tab:last_test_accuracy_cifar}
+  \begin{tabular}{@{}lcccccccccc@{}}
+    \toprule
+    \multirow{4}{*}{Methods} & \multicolumn{5}{c}{CIFAR10} & \multicolumn{5}{c}{CIFAR100}\\
+    \cmidrule(lr){2-6} \cmidrule(lr){7-11}
+    %\midrule
+    & \multicolumn{3}{c}{Sym.} & \multicolumn{2}{c}{Asym.} & \multicolumn{3}{c}{Sym.} & \multicolumn{2}{c}{Asym.}\\
+    & 20 & 40 & 60 & 20 & 40 & 20 & 40 & 60 & 20 & 40\\ 
+    %\cline{2-3} \cline{5-6}
+    \cmidrule(r){1-1} \cmidrule(lr){2-4} \cmidrule(lr){5-6} \cmidrule(lr){7-9} \cmidrule(lr){10-11}
+    PuriDivER~\cite{bang2022online} & $\boldsymbol{60.6}_{\pm 1.8}$ & $57.8_{\pm 2.2}$ & $\boldsymbol{52.0}_{\pm 2.8}$ & $\boldsymbol{61.2}_{\pm 2.9}$ & $49.4_{\pm 5.7}$ & $36.3_{\pm 0.3}$ & $33.6_{\pm 0.7}$ & $\boldsymbol{28.6}_{\pm 1.7}$ & $34.3_{\pm 1.0}$ & $24.9_{\pm 1.4}$ \\
+    \textbf{NTD} (ours) & $59.8_{\pm 0.6}$ & $\boldsymbol{59.7}_{\pm 1.5}$ & $50.9_{\pm 0.3}$ & $60.1_{\pm 0.3}$ & $\boldsymbol{53.7}_{\pm 3.9}$ & $\boldsymbol{38.3}_{\pm 1.0}$ & $\boldsymbol{35.2}_{\pm 1.5}$ & $28.0_{\pm 1.1}$ & $\boldsymbol{37.6}_{\pm 0.3}$ & $\boldsymbol{25.8}_{\pm 1.0}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
 
-| Leaderboards     | Filename               | Upload time         | Evaluation result | Ranking |
-| ---------------- | ---------------------- | ------------------- | ----------------- | ------- |
-| Public & Private | fp-1-0.01-0.5-2172.csv | 2023-08-04 00:51:42 | 0.5700583         | 1/24    |
+|     | CIFAR10  | CIFAR100 | WebVision | Food-101N |
+| ----------- | -------- | -------- | --------- | --------- |
+| Methods | 20 | 40 | 60 | 20 | 40 | 20 | 40 | 60 | 20 | 40 |
+|  |  <td colspan=3> Sym. | <td colspan=2> Asym. | <td colspan=3> Sym. | <td colspan=2> Asym. |
+| PuriDivER    | 60.6 | 57.8 | 52.0 | 61.2 | 49.4 | 36.3 | 33.6 | 28.6 | 34.3 | 24.9 |
+| **NTD**      | 59.8 | 59.7 | 50.9 | 60.1 | 53.7 | 38.3 | 35.2 | 28.0 | 37.6 | 25.8 |
+| # class     | 10       | 100      | 50        | 101       |
+| # tasks     | 5        | 5        | 10        | 5         |
+| Memory size | 500      | 2000     | 1000      | 2000      |
+| Models      | ResNet18 | ResNet32 | ResNet34  | ResNet34  |
+| Batch size  | 16       | 16       | 16        | 16        |
+| Epochs      | 256      | 256      | 128       | 128       |
 
-#### 3.2. Last clean ratio
+#### 3.2. Last memory clean ratio
 
 #### 3.3. Training time spent
 
