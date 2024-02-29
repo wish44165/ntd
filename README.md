@@ -1,6 +1,7 @@
 ## Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels
 
-5th CLVISION CVPR Workshop
+
+<img src="https://github.com/wish44165/ntd/blob/main/assets/Fig1.png" alt="Workflow" width="70%" >
 
 
 
@@ -143,15 +144,15 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 | Methods                  | WebVision          | Food-101N          |
 |--------------------------|--------------------|--------------------|
-| PuriDivER [1]            | $25.1$ ± $0.8$     | $13.8$ ± $0.6$     |
-| NTD (ours)               | **26.1** ± $1.6$   | **17.0** ± $0.9$   |
+| PuriDivER [1]            | 25.1 ± 0.8         | 13.8 ± 0.6         |
+| NTD (ours)               | **26.1** ± 1.6     | **17.0** ± 0.9     |
 
 **Last memory clean ratio on WebVision and Food-101N.**
 
 | Methods                  | WebVision          | Food-101N          |
 |--------------------------|--------------------|--------------------|
-| PuriDivER [1]            | $100$ ± $0$        | $100$ ± $0$        |
-| NTD (ours)               | **100** ± $0$      | **100** ± $0$      |
+| PuriDivER [1]            | 100 ± 0            | 100 ± 0            |
+| NTD (ours)               | **100** ± 0        | **100** ± 0        |
 
 
 **The average training time on the CIFAR10 dataset with noisy type Sym.-40\% across three distinct random seeds for the online learning stage, the episodic memory usage stage, and the overall process (measured in hours).**
@@ -180,11 +181,5 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 ### Citation
 ```
-@inproceedings{chen2023one,
-  title={One-Epoch Training for Object Detection in Fisheye Images},
-  author={Chen, Yu-Hsi},
-  booktitle={Proceedings of the 5th ACM International Conference on Multimedia in Asia},
-  pages={1--5},
-  year={2023}
-}
+
 ```
