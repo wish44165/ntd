@@ -171,16 +171,9 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 
 **References:**
 
-[1] bang2022online
+[1] [Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries](https://arxiv.org/abs/2203.15355) ([GitHub](https://github.com/clovaai/puridiver))
 
 </details>
-
-
-
-
-### 4. Acknowledgments and References
-
-- [Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries](https://arxiv.org/abs/2203.15355) ([GitHub](https://github.com/clovaai/puridiver))
 
 
 
