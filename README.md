@@ -1,9 +1,12 @@
-## Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels
+## NTD - Official Pytorch Implementation
 
 
 <img src="https://github.com/wish44165/ntd/blob/main/assets/Fig1.png" alt="Workflow" width="70%" >
 
 
+**Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels**
+
+[Paper](https://arxiv.org/abs/2404.04871)
 
 
 ### 1. Environmental Setup
@@ -146,7 +149,7 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 |--------------------------|--------------------|--------------------|
 | PuriDivER [1]            | 25.1 ± 0.8         | 13.8 ± 0.6         |
 | NTD (ours)               | **26.1** ± 1.6     | **17.0** ± 0.9     |
-
+Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels
 **Last memory clean ratio on WebVision and Food-101N.**
 
 | Methods                  | WebVision          | Food-101N          |
@@ -177,9 +180,19 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 </details>
 
 
+### Acknowledgements
+
+We extend our gratitude to the authors referenced in [PuriDivER](https://github.com/clovaai/puridiver) for furnishing the organized code base, facilitating the reproducibility of results, and enabling performance comparison with multiple approaches.
 
 
 ### Citation
 ```
-
+@misc{chen2024data,
+      title={Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels}, 
+      author={Yu-Hsi Chen},
+      year={2024},
+      eprint={2404.04871},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
