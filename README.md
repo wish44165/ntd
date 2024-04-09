@@ -1,12 +1,13 @@
 ## NTD - Official Pytorch Implementation
 
 
+The code has been successfully tested on Ubuntu 22.04.
+
+
 <img src="https://github.com/wish44165/ntd/blob/main/assets/Fig1.png" alt="Workflow" width="70%" >
 
 
-**Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels**
-
-[Paper](https://arxiv.org/abs/2404.04871)
+**[Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels](https://arxiv.org/abs/2404.04871)**
 
 
 ### 1. Environmental Setup
@@ -182,7 +183,7 @@ Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels
 
 ### Acknowledgements
 
-We extend our gratitude to the authors referenced in [PuriDivER](https://github.com/clovaai/puridiver) for furnishing the organized code base, facilitating the reproducibility of results, and enabling performance comparison with multiple approaches.
+We extend our gratitude to the authors in [PuriDivER](https://github.com/clovaai/puridiver) for furnishing the organized code base, facilitating the reproducibility of results, and enabling performance comparison with multiple approaches.
 
 
 ### Citation
