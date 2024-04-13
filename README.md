@@ -150,7 +150,7 @@ $ python run_experiment.py --dataset Food-101N --dataset_path ../../../../datase
 |--------------------------|--------------------|--------------------|
 | PuriDivER [1]            | 25.1 ± 0.8         | 13.8 ± 0.6         |
 | NTD (ours)               | **26.1** ± 1.6     | **17.0** ± 0.9     |
-Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels
+
 **Last memory clean ratio on WebVision and Food-101N.**
 
 | Methods                  | WebVision          | Food-101N          |
@@ -181,9 +181,13 @@ Data Stream Sampling with Fuzzy Task Boundaries and Noisy Labels
 </details>
 
 
+
+
 ### Acknowledgements
 
 We extend our gratitude to the authors in [PuriDivER](https://github.com/clovaai/puridiver) for furnishing the organized code base, facilitating the reproducibility of results, and enabling performance comparison with multiple approaches.
+
+
 
 
 ### Citation
